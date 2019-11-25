@@ -17,7 +17,7 @@ variable "PATH_TO_PRIVATE_KEY"{
 default="tom"
 }
 variable "PATH_TO_PUBLIC_KEY"{
-default="tom.pem"
+default="tom.pub"
 }
 variable "INSTANCE_NAME"{
 default="ubuntu"
