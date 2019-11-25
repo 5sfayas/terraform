@@ -4,7 +4,7 @@ variable"AWS_REGION"{
 default="eu-west-1"
 }
 
-variable AMI{
+variable AMIS{
 type="map"
 defualt= {
     us-east-1 = "ami-13be557e"

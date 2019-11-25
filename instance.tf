@@ -1,4 +1,4 @@
-resource "aws_key_pair" ""tom key"{
+resource "aws_key_pair" "tom"{
 key_name="tom"
 public_key="${file("$var.PATH_TO_PUBLIC_KEY")"
 }
