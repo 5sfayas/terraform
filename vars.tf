@@ -12,3 +12,14 @@ defualt= {
     eu-west-1 = "ami-844e0bf7"
 	}
 }
+
+variable "PATH_TO_PRIVATE_KEY"{
+default="tom"
+}
+variable "PATH_TO_PUBLIC_KEY"{
+default="tom.pem"
+}
+variable "INSTANCE_NAME"{
+default="ubuntu"
+}
+
