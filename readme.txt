@@ -14,5 +14,10 @@ how to apply AMI ID based on default region
 
 tutorial two explain how to provision instance
 => this tutorial show upload a script to instance
+1.log instance and upload file thats the idea
+so, create key in a specific directory using ssh-keygen -f
+then specify pub,pri key path on vars.tf
+then create a provisioner "file" block and specify where to upload in instance.tf
+
 
 
