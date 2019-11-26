@@ -1,11 +1,11 @@
 resource "aws_key_pair" "tom"{
 key_name="tom"
-public_key="${file("$var.PATH_TO_PUBLIC_KEY")"
+public_key="${file("${var.PATH_TO_PUBLIC_KEY"})}"
 }
 
 resource "aws_instance" "example"
 {
-ami="${lookup(var.AMIS, var.AWS_REGION)"
+ami="${lookup(var.AMIS, var.AWS_REGION)}"
 instance_type="t2.micro"
 key_name="${aws_key_pair.tom.key_name}"
 
