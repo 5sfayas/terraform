@@ -13,7 +13,6 @@ key_name="${aws_key_pair.tom.key_name}"
 	source="script.sh"
 	destination="~/fayasak/script.sh"
 	}
-
 	provisioner "remote-exec"{
 	inline=[
 	"chmod +x ~/fayasak/script.sh",
@@ -25,7 +24,7 @@ key_name="${aws_key_pair.tom.key_name}"
 	user="${var.INSTANCE_USERNAME}"
 	private_key="${file("${var.PATH_TO_PRIVATE_KEY}")}"
 	}
-
-
+	
+	
 }
 
