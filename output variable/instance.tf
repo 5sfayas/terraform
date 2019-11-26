@@ -26,7 +26,10 @@ key_name="${aws_key_pair.tom.key_name}"
 	private_key="${file("${var.PATH_TO_PRIVATE_KEY}")}"
 	}
 	provisioner "local-exec"{
-		command ="echo ${aws_instance.example.private_ip}>>instanceprivateip.txt"
-
+	command ="echo ${aws_instance.example.private_ip}>>instanceprivateip.txt"
+		}
 }
+output "ip"{
+	value="${aws_instance.example.public_ip}"
+	}
 
