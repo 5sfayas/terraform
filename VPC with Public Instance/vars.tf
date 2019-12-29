@@ -1,7 +1,8 @@
 variable "AWS_REGION" {
   default = "eu-west-1"
 }
-
+# this ssh private key this compulsory to ssh AWS instance
+# I create ssh key by ssh-keygen -f command in my working directory
 variable "PATH_TO_PRIVATE_KEY" {
   default = "mykey"
 }

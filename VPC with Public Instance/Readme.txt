@@ -14,6 +14,7 @@ This tutorial spin-up ec2 instance in different availablity zone including VPC, 
 	ip range 10.0.1/24		ip range 10.0.5/24
 	
 I create Internet gateway to connect all public instances to internet. but i did not create any routing table to private instances (i'll cover later)
+Note:- create ssh key in your working directory to later ssh your instance
 
 	
 	
